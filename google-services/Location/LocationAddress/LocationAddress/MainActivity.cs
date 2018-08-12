@@ -281,7 +281,7 @@ namespace LocationAddress
             {
                 Intent intent = new Intent();
                 intent.SetAction(Settings.ActionApplicationDetailsSettings);
-                Uri uri = Uri.FromParts("package", BuildConfig.ApplicationId, null);
+                Uri uri = Uri.FromParts("package", "android.arch.lifecycle", null);
                 intent.SetData(uri);
                 intent.SetFlags(ActivityFlags.NewTask);
                 Activity.StartActivity(intent);
