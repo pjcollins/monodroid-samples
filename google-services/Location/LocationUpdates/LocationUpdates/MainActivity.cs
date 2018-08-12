@@ -310,7 +310,7 @@ namespace LocationUpdates
         {
             Intent intent = new Intent();
             intent.SetAction(Settings.ActionApplicationDetailsSettings);
-            var uri = Android.Net.Uri.FromParts("package", BuildConfig.ApplicationId, null);
+            var uri = Android.Net.Uri.FromParts("package", "android.arch.lifecycle", null);
             intent.SetData(uri);
             intent.SetFlags(ActivityFlags.NewTask);
             Activity.StartActivity(intent);
